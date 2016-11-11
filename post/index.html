@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+
+<!-- 
+Strata by HTML5 UP
+html5up.net | @n33co
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Posts &middot; Victor Mendonça</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="Victor Mendonça">
+		<meta name="description" content="One shell script at time">
+		<meta http-equiv="content-language" content="en-us" />
+
+		
+		<meta name="og:site_name" content="Victor Mendonça">
+		<meta name="og:title" content="Posts">
+		<meta name="og:url" content="https://example.org/post/">
+		<meta name="og:image" content="https://example.org/images/profile.jpg">
+		
+
+		<meta name="generator" content="Hugo 0.17" />
+
+		<!--[if lte IE 8]><script src='https://example.org/js/ie/html5shiv.js'></script><![endif]-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="https://example.org/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="https://example.org//css/ie8.css"><![endif]-->
+
+		
+		<link href="https://example.org/post/index.xml" rel="alternate" type="application/rss+xml" title="Victor Mendonça" />
+		<link href="https://example.org/post/index.xml" rel="feed" type="application/rss+xml" title="Victor Mendonça" />
+		
+		
+	</head>
+
+	<body id="top">
+		<!-- Header -->
+<header id="header">
+	<a href="https://example.org/" class="image avatar"><img src="https://example.org/images/profile.jpg" alt="" /></a>
+	
+		<h1><strong>I&rsquo;m Victor</strong>, <em>an IT consultant with dreams of automation.</em></h1>
+	
+
+	
+		<nav id="sidebar">
+			<ul>
+			
+				<li><a href="https://example.org/">Home</a></li>
+			
+				<li><a href="https://example.org/professional/">Professional</a></li>
+			
+				<li><a href="https://example.org/dance/">Dance</a></li>
+			
+				<li><a href="https://example.org/post/">Blog</a></li>
+			
+			</ul>
+		</nav>
+	
+</header>
+
+
+		<!-- Main -->
+		<div id="main">
+			
+    
+    
+        <span>
+    <h1>
+        <a href="https://example.org/post/How-to-Record-and-Share-a-Terminal-Session/">How to Record and Share a Terminal Session</a>
+    </h1>
+
+    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
+<time datetime="2016-11-07 23:14:36 -0500 EST">2016-11-07</time>&nbsp;&nbsp;
+
+
+    
+    
+
+
+
+   
+   
+
+
+</span>
+
+<p>A while ago I had shared instructions on &ldquo;How to Share a Terminal Window Online&rdquo;. This is great for live support.
+Today I&rsquo;m sharing instructions on how to record your terminal session, and not only share it, but also allow users to copy and paste text from the playback video.
+The installation could not be easier. And to show how great this utility is, I&rsquo;m showing the instructions using a &ldquo;video&rdquo; recorded with &ldquo;showterm&rdquo;.</p>
+<hr>
+
+    
+        <span>
+    <h1>
+        <a href="https://example.org/post/How-to-Create-A-Prompt-With-Timeout-in-Bash/">How to Create A Prompt With Timeout in Bash</a>
+    </h1>
+
+    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
+<time datetime="2016-10-19 23:26:12 -0500 -0500">2016-10-19</time>&nbsp;&nbsp;
+
+
+    
+    
+
+
+
+   
+   
+
+
+</span>
+
+<p>Here&rsquo;s a quick function that will display a prompt with timeout in a bash script:
+_myCountdownFunction () { echo -e &quot;Hit \&quot;Ctrl+c\&quot; to quit or \&quot;Enter\&quot; to continue... \c&quot; cnt=5 while (( cnt &gt;= 0 )) ; do if (( cnt &lt; 9 )) ; then echo -e &quot;\b\b${cnt}s\c&quot; elif (( cnt == 9 )) ; then echo -e &quot;\b\b\b ${cnt}s\c&quot; elif (( cnt &lt;= 99 )) ; then echo -e &quot;\b\b\b\b ${cnt}s\c&quot; elif (( cnt &lt; 999 )) ; then echo -e &quot;\b\b\b\b${cnt}s\c&quot; fi read -t 1 my_reply (( $?</p>
+<hr>
+
+    
+        <span>
+    <h1>
+        <a href="https://example.org/post/How-to-Create-a-Quick-Web-Server/">How to Create a Quick Web Server</a>
+    </h1>
+
+    <i class="fa fa-calendar"></i>&nbsp;&nbsp;
+<time datetime="2016-09-02 00:01:59 -0500 -0500">2016-09-02</time>&nbsp;&nbsp;
+
+
+    
+    
+
+
+
+   
+   
+
+
+</span>
+
+<p>Have you ever had the need to create a web server to perform a test? Well, here are a few quick options on how to do this.
+Got Netcat? If you have Netcat on the server (which is pretty easy to get), then you can do this.
+Example 1: Display the date and the text &ldquo;It works&rdquo;
+nc -kl 10001 -c 'echo -e &quot;HTTPS/1.1 200 OK\r\n\r\n$(date)\r\n\r\nIt works&quot;'  Example 2: Display an index.</p>
+<hr>
+
+    
+
+    
+
+
+		</div>
+
+		<!-- Footer -->
+<footer id="footer">
+	<ul class="icons">
+		
+		<li><a href="//plus.google.com/+114756910609148560264" target="_blank" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
+		
+		
+        <li><a href="//facebook.com/victormendonca" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        
+		
+		<li><a href="//twitter.com/victorbrca" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+		
+		
+		<li><a href="//github.com/victorbrca" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+		
+		
+		<li><a href="victormendonca" target="_blank" class="icon fa-linkedin-square"><span class="label">Linkedin</span></a></li>
+		
+		
+		
+		<li><a href="//flickr.com/photos/victorbrca" target="_blank" class="icon fa-flickr"><span class="label">Flickr</span></a></li>
+		
+		
+		
+		<li><a href="https://example.org/post/index.xml" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
+		
+	</ul>
+
+	<ul class="copyright">
+		
+		<li>&copy; Victor Mendonça</li>
+		
+		<li>Design: <a href="//html5up.net">HTML5 UP</a></li>
+		
+	</ul>
+</footer>
+
+<!-- Scripts -->
+<script src="https://example.org/js/jquery.min.js"></script>
+<script src="https://example.org/js/jquery.poptrox.min.js"></script>
+<script src="https://example.org/js/skel.min.js"></script>
+<script src="https://example.org/js/util.js"></script>
+
+<script src="https://example.org/js/main.js"></script>
+
+
+
+
+
+	</body>
+</html>
