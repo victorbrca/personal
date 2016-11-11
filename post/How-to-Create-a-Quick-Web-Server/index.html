@@ -7,7 +7,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 -->
 <html>
 	<head>
-		<title>Victor Mendonça</title>
+		<title>How to Create a Quick Web Server &middot; Victor Mendonça</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="author" content="Victor Mendonça">
@@ -16,8 +16,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 		
 		<meta name="og:site_name" content="Victor Mendonça">
-		<meta name="og:title" content="Victor Mendonça">
-		<meta name="og:url" content="https://victorbrca.github.io/">
+		<meta name="og:title" content="How to Create a Quick Web Server">
+		<meta name="og:url" content="https://victorbrca.github.io/post/How-to-Create-a-Quick-Web-Server/">
 		<meta name="og:image" content="https://victorbrca.github.io/images/profile.jpg">
 		
 
@@ -28,9 +28,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<link rel="stylesheet" href="https://victorbrca.github.io/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="https://victorbrca.github.io//css/ie8.css"><![endif]-->
 
-		
-		<link href="https://victorbrca.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Victor Mendonça" />
-		<link href="https://victorbrca.github.io/index.xml" rel="feed" type="application/rss+xml" title="Victor Mendonça" />
 		
 		
 	</head>
@@ -64,49 +61,64 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<!-- Main -->
 		<div id="main">
 			
-	
-		<section>
-	<header class="major">
-		<h2><strong>Hi, I&rsquo;m Victor</strong></h2>
-	</header>
-	<p><strong>an independent IT contractor with strong Linux background living in Toronto.</strong><br /><br />Somehow you&rsquo;ve got here, and I&rsquo;m hoping you know how. But fear not, if you got here by mistake, either keep on browsing, or just hit the back button on your browser and go back to searching cat videos. <strong>No hard feelings.</strong> ;-p<br /><br />Here you find various information about me, both professional and personal, my hobbies, history and other things about myself.<br /><br /> I hope you enjoy it.</p>
-</section>
+	<span>
+		<h1>How to Create a Quick Web Server</h1>
 
-	
-
-	
-
-	
-		<section>
-    
-        <h2>Recent blog posts</h2>
-    
-
-	<div class="row">
-        <br>
-        <p>
-        <ol class="recent-posts">
-        
-            <li><a href="https://victorbrca.github.io/post/How-to-Record-and-Share-a-Terminal-Session/">How to Record and Share a Terminal Session</a></li>
-        
-            <li><a href="https://victorbrca.github.io/post/How-to-Create-A-Prompt-With-Timeout-in-Bash/">How to Create A Prompt With Timeout in Bash</a></li>
-        
-            <li><a href="https://victorbrca.github.io/post/How-to-Create-a-Quick-Web-Server/">How to Create a Quick Web Server</a></li>
-        
-        </ol>
-        </p>
-	</div>
-</section>
-
-	
-
-	
 		
-<section>
-	
-	<div class="row" id="contact-form">
-		
-	
+	</span>
+
+	<p>
+	    
+
+<p>Have you ever had the need to create a web server to perform a test? Well, here are a few quick options on how to do this.</p>
+
+<h1 id="got-netcat"><strong>Got Netcat?</strong></h1>
+
+<p>If you have Netcat on the server (which is pretty easy to get), then you can do this.</p>
+
+<p><strong>Example 1:</strong> Display the date and the text &ldquo;It works&rdquo;</p>
+
+<pre><code>nc -kl 10001 -c 'echo -e &quot;HTTPS/1.1 200 OK\r\n\r\n$(date)\r\n\r\nIt works&quot;'
+</code></pre>
+
+<p><strong>Example 2:</strong> Display an index.html file</p>
+
+<pre><code>nc -kl 10001 -c 'echo -e &quot;HTTPS/1.1 200 OK\r\n\r\n$(cat index.html)&quot;'
+</code></pre>
+
+<p><strong>Example 3:</strong> Using HTTPS
+a. First get a set of self-signed certificate and key (either generate or download here - <a href="http://www.selfsignedcertificate.com/" target="_blank"><a href="http://www.selfsignedcertificate.com/">http://www.selfsignedcertificate.com/</a></a>)
+b. Add the certificate to the server and run netcate with the following parameters</p>
+
+<pre><code>nc -l -p 10001 -k --ssl --ssl-cert ca.crt --ssl-key ca.key -c 'echo -e \
+&quot;HTTP/1.1 200 OK\r\n\r\n$(date)\r\n\r\nIt works&quot;'
+</code></pre>
+
+<h1 id="python">Python</h1>
+
+<p>This is the easiest one, as long as you have Python on that system. Just run the commands below and you are set. If you have an index file on that folder, Python will display, otherwise it will do a directory listing.</p>
+
+<pre><code>$ python -m SimpleHTTPServer 8888
+Serving HTTP on 0.0.0.0 port 8888 ...
+</code></pre>
+
+	</p>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'victorbrca-github-io';
+    var disqus_identifier = 'https:\/\/victorbrca.github.io\/post\/How-to-Create-a-Quick-Web-Server\/';
+    var disqus_title = 'How to Create a Quick Web Server';
+    var disqus_url = 'https:\/\/victorbrca.github.io\/post\/How-to-Create-a-Quick-Web-Server\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 		</div>
 

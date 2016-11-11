@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://victorbrca.github.io/</loc>
+    <lastmod>2016-11-09T17:46:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victorbrca.github.io/photography/</loc>
+    <lastmod>2016-11-09T17:46:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victorbrca.github.io/contact/</loc>
+    <lastmod>2016-11-07T23:22:47-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victorbrca.github.io/post/How-to-Record-and-Share-a-Terminal-Session/</loc>
+    <lastmod>2016-11-07T23:14:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victorbrca.github.io/professional/</loc>
+    <lastmod>2016-11-07T23:08:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victorbrca.github.io/dance/</loc>
+    <lastmod>2016-11-07T23:01:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victorbrca.github.io/post/How-to-Create-A-Prompt-With-Timeout-in-Bash/</loc>
+    <lastmod>2016-10-19T23:26:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://victorbrca.github.io/post/How-to-Create-a-Quick-Web-Server/</loc>
+    <lastmod>2016-09-02T00:01:59-05:00</lastmod>
+  </url>
+  
+</urlset>
