@@ -1,117 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post-rsses on Victor Mendonça</title>
-    <link>https://victorbrca.github.io/post/index.xml</link>
-    <description>Recent content in Post-rsses on Victor Mendonça</description>
+    <title>Posts on Victor Mendonça</title>
+    <link>https://victorbrca.github.io/post/</link>
+    <description>Recent content in Posts on Victor Mendonça</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Nov 2016 23:14:36 -0500</lastBuildDate>
-    <atom:link href="https://victorbrca.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://victorbrca.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>How to Record and Share a Terminal Session</title>
-      <link>https://victorbrca.github.io/post/How-to-Record-and-Share-a-Terminal-Session/</link>
+      <link>https://victorbrca.github.io/post/how-to-record-and-share-a-terminal-session/</link>
       <pubDate>Mon, 07 Nov 2016 23:14:36 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/post/How-to-Record-and-Share-a-Terminal-Session/</guid>
-      <description>&lt;p&gt;A while ago I had shared instructions on &amp;ldquo;How to Share a Terminal Window Online&amp;rdquo;. This is great for live support.&lt;/p&gt;
-
-&lt;p&gt;Today I&amp;rsquo;m sharing instructions on how to record your terminal session, and not only share it, but also allow users to copy and paste text from the playback video.&lt;/p&gt;
-
-&lt;p&gt;The installation could not be easier. And to show how great this utility is, I&amp;rsquo;m showing the instructions using a &amp;ldquo;video&amp;rdquo; recorded with &amp;ldquo;showterm&amp;rdquo;.&lt;/p&gt;
-
-&lt;iframe src=&#34;https://showterm.io/e01df02ef6011e200adfa&#34; width=&#34;710&#34; height=&#34;320&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Now go ahead and try copying text from the video. Isn&amp;rsquo;t that great!?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Reference:&lt;/strong&gt;
-&lt;BR&gt;
-&lt;a href=&#34;http://showterm.io/&#34;&gt;http://showterm.io&lt;/a&gt;
-&lt;BR&gt;
-&lt;a href=&#34;https://github.com/ConradIrwin/showterm/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;https://github.com/ConradIrwin/showterm&#34;&gt;https://github.com/ConradIrwin/showterm&lt;/a&gt;&lt;/a&gt;
-&lt;a href=&#34;https://github.com/ConradIrwin/showterm&#34;&gt;https://github.com/ConradIrwin/showterm&lt;/a&gt;&lt;/p&gt;
-</description>
+      <guid>https://victorbrca.github.io/post/how-to-record-and-share-a-terminal-session/</guid>
+      <description>A while ago I had shared instructions on &amp;ldquo;How to Share a Terminal Window Online&amp;rdquo;. This is great for live support.
+Today I&amp;rsquo;m sharing instructions on how to record your terminal session, and not only share it, but also allow users to copy and paste text from the playback video.
+The installation could not be easier. And to show how great this utility is, I&amp;rsquo;m showing the instructions using a &amp;ldquo;video&amp;rdquo; recorded with &amp;ldquo;showterm&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>How to Create A Prompt With Timeout in Bash</title>
-      <link>https://victorbrca.github.io/post/How-to-Create-A-Prompt-With-Timeout-in-Bash/</link>
+      <link>https://victorbrca.github.io/post/how-to-create-a-prompt-with-timeout-in-bash/</link>
       <pubDate>Wed, 19 Oct 2016 23:26:12 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/post/How-to-Create-A-Prompt-With-Timeout-in-Bash/</guid>
-      <description>&lt;p&gt;Here&amp;rsquo;s a quick function that will display a prompt with timeout in a bash script:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;_myCountdownFunction &lt;span style=&#34;color: #f92672&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;{&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; -e &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Hit \&amp;quot;Ctrl+c\&amp;quot; to quit or \&amp;quot;Enter\&amp;quot; to continue...    \c&amp;quot;&lt;/span&gt; 
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;cnt&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;5
-&lt;span style=&#34;color: #66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;((&lt;/span&gt; cnt &amp;gt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;do&lt;/span&gt;
-  &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;((&lt;/span&gt; cnt &amp;lt; &lt;span style=&#34;color: #ae81ff&#34;&gt;9&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; -e &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;\b\b${&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;cnt&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;}s\c&amp;quot;&lt;/span&gt;
-  &lt;span style=&#34;color: #66d9ef&#34;&gt;elif&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;((&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;cnt&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;9&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; -e &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;\b\b\b ${&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;cnt&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;}s\c&amp;quot;&lt;/span&gt;
-  &lt;span style=&#34;color: #66d9ef&#34;&gt;elif&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;((&lt;/span&gt; cnt &amp;lt;&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;99&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; -e &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;\b\b\b\b ${&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;cnt&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;}s\c&amp;quot;&lt;/span&gt;
-  &lt;span style=&#34;color: #66d9ef&#34;&gt;elif&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;((&lt;/span&gt; cnt &amp;lt; &lt;span style=&#34;color: #ae81ff&#34;&gt;999&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; -e &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;\b\b\b\b${&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;cnt&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;}s\c&amp;quot;&lt;/span&gt;
-  &lt;span style=&#34;color: #66d9ef&#34;&gt;fi&lt;/span&gt;
-  &lt;span style=&#34;color: #f8f8f2&#34;&gt;read&lt;/span&gt; -t &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; my_reply
-  &lt;span style=&#34;color: #f92672&#34;&gt;((&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;$?&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;exit&lt;/span&gt; 1
-  &lt;span style=&#34;color: #f8f8f2&#34;&gt;let&lt;/span&gt; cnt-&lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt;1
-&lt;span style=&#34;color: #66d9ef&#34;&gt;done&lt;/span&gt;
-&lt;span style=&#34;color: #f92672&#34;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The user will see the following message on his terminal with the seconds counting down in place:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;john@ubuntu:~$ Hit &amp;quot;Ctrl+c&amp;quot; to quit or &amp;quot;Enter&amp;quot; to continue... 5s
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;At the end of the specified time in &amp;lsquo;cnt&amp;rsquo;, the script (where the function would be) will continue executing, and if the user hits &amp;ldquo;Ctrl+c&amp;rdquo; before that, it will exit (both script and function).&lt;/p&gt;
-
-&lt;p&gt;The function supports up to 999s (which should be enough).&lt;/p&gt;
-</description>
+      <guid>https://victorbrca.github.io/post/how-to-create-a-prompt-with-timeout-in-bash/</guid>
+      <description>Here&amp;rsquo;s a quick function that will display a prompt with timeout in a bash script:
+_myCountdownFunction () { echo -e &#34;Hit \&#34;Ctrl+c\&#34; to quit or \&#34;Enter\&#34; to continue... \c&#34; cnt=5 while (( cnt = 0 )) ; do if (( cnt The user will see the following message on his terminal with the seconds counting down in place:
+john@ubuntu:~$ Hit &amp;quot;Ctrl+c&amp;quot; to quit or &amp;quot;Enter&amp;quot; to continue... 5s  At the end of the specified time in &amp;lsquo;cnt&amp;rsquo;, the script (where the function would be) will continue executing, and if the user hits &amp;ldquo;Ctrl+c&amp;rdquo; before that, it will exit (both script and function).</description>
     </item>
     
     <item>
       <title>How to Create a Quick Web Server</title>
-      <link>https://victorbrca.github.io/post/How-to-Create-a-Quick-Web-Server/</link>
+      <link>https://victorbrca.github.io/post/how-to-create-a-quick-web-server/</link>
       <pubDate>Fri, 02 Sep 2016 00:01:59 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/post/How-to-Create-a-Quick-Web-Server/</guid>
-      <description>
-
-&lt;p&gt;Have you ever had the need to create a web server to perform a test? Well, here are a few quick options on how to do this.&lt;/p&gt;
-
-&lt;h1 id=&#34;got-netcat&#34;&gt;&lt;strong&gt;Got Netcat?&lt;/strong&gt;&lt;/h1&gt;
-
-&lt;p&gt;If you have Netcat on the server (which is pretty easy to get), then you can do this.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 1:&lt;/strong&gt; Display the date and the text &amp;ldquo;It works&amp;rdquo;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nc -kl 10001 -c &#39;echo -e &amp;quot;HTTPS/1.1 200 OK\r\n\r\n$(date)\r\n\r\nIt works&amp;quot;&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 2:&lt;/strong&gt; Display an index.html file&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nc -kl 10001 -c &#39;echo -e &amp;quot;HTTPS/1.1 200 OK\r\n\r\n$(cat index.html)&amp;quot;&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Example 3:&lt;/strong&gt; Using HTTPS
-a. First get a set of self-signed certificate and key (either generate or download here - &lt;a href=&#34;http://www.selfsignedcertificate.com/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://www.selfsignedcertificate.com/&#34;&gt;http://www.selfsignedcertificate.com/&lt;/a&gt;&lt;/a&gt;)
-b. Add the certificate to the server and run netcate with the following parameters&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;nc -l -p 10001 -k --ssl --ssl-cert ca.crt --ssl-key ca.key -c &#39;echo -e \
-&amp;quot;HTTP/1.1 200 OK\r\n\r\n$(date)\r\n\r\nIt works&amp;quot;&#39;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;python&#34;&gt;Python&lt;/h1&gt;
-
-&lt;p&gt;This is the easiest one, as long as you have Python on that system. Just run the commands below and you are set. If you have an index file on that folder, Python will display, otherwise it will do a directory listing.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ python -m SimpleHTTPServer 8888
-Serving HTTP on 0.0.0.0 port 8888 ...
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <guid>https://victorbrca.github.io/post/how-to-create-a-quick-web-server/</guid>
+      <description>Have you ever had the need to create a web server to perform a test? Well, here are a few quick options on how to do this.
+Got Netcat? If you have Netcat on the server (which is pretty easy to get), then you can do this.
+Example 1: Display the date and the text &amp;ldquo;It works&amp;rdquo;
+nc -kl 10001 -c &#39;echo -e &amp;quot;HTTPS/1.1 200 OK\r\n\r\n$(date)\r\n\r\nIt works&amp;quot;&#39;  Example 2: Display an index.</description>
     </item>
     
   </channel>
