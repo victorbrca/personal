@@ -17,16 +17,16 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		
 		<meta name="og:site_name" content="Victor Mendonça">
 		<meta name="og:title" content="How to Create A Prompt With Timeout in Bash">
-		<meta name="og:url" content="https://victorbrca.github.io/post/how-to-create-a-prompt-with-timeout-in-bash/">
-		<meta name="og:image" content="https://victorbrca.github.io/images/profile.jpg">
+		<meta name="og:url" content="/post/how-to-create-a-prompt-with-timeout-in-bash/">
+		<meta name="og:image" content="/images/profile.jpg">
 		
 
-		<meta name="generator" content="Hugo 0.27.1" />
+		<meta name="generator" content="Hugo 0.29" />
 
-		<!--[if lte IE 8]><script src='https://victorbrca.github.io/js/ie/html5shiv.js'></script><![endif]-->
+		<!--[if lte IE 8]><script src='/js/ie/html5shiv.js'></script><![endif]-->
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
-		<link rel="stylesheet" href="https://victorbrca.github.io/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="https://victorbrca.github.io//css/ie8.css"><![endif]-->
+		<link rel="stylesheet" href="/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="//css/ie8.css"><![endif]-->
 
 		
 		
@@ -35,7 +35,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 	<body id="top">
 		<!-- Header -->
 <header id="header">
-	<a href="https://victorbrca.github.io/" class="image avatar"><img src="https://victorbrca.github.io/images/profile.jpg" alt="" /></a>
+	<a href="/" class="image avatar"><img src="/images/profile.jpg" alt="" /></a>
 	
 		<h1><strong>I&rsquo;m Victor</strong>, <em>an IT consultant with dreams of automation.</em></h1>
 	
@@ -44,11 +44,11 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 		<nav id="sidebar">
 			<ul>
 			
-				<li><a href="https://victorbrca.github.io/professional/">Professional</a></li>
+				<li><a href="/professional/">Professional</a></li>
 			
-				<li><a href="https://victorbrca.github.io/dance/">Dance</a></li>
+				<li><a href="/dance/">Dance</a></li>
 			
-				<li><a href="https://victorbrca.github.io/">Home</a></li>
+				<li><a href="/">Home</a></li>
 			
 			</ul>
 		</nav>
@@ -67,27 +67,25 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 	<p>
 	    <p>Here&rsquo;s a quick function that will display a prompt with timeout in a bash script:</p>
-
-_myCountdownFunction () {
-echo -e "Hit \"Ctrl+c\" to quit or \"Enter\" to continue...    \c" 
-cnt=5
-while (( cnt >= 0 )) ; do
-  if (( cnt < 9 )) ; then
-    echo -e "\b\b${cnt}s\c"
-  elif (( cnt == 9 )) ; then
-    echo -e "\b\b\b ${cnt}s\c"
-  elif (( cnt <= 99 )) ; then
-    echo -e "\b\b\b\b ${cnt}s\c"
-  elif (( cnt < 999 )) ; then
-    echo -e "\b\b\b\b${cnt}s\c"
-  fi
-  read -t 1 my_reply
-  (( $? == 0 )) && exit 1
-  let cnt-=1
-done
-}
-
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="">_myCountdownFunction </span><span style="color:#f92672">()</span><span style=""> </span><span style="color:#f92672">{</span><span style="">
+</span><span style=""></span><span style="">echo</span><span style=""> -e </span><span style="color:#e6db74">&#34;Hit \&#34;Ctrl+c\&#34; to quit or \&#34;Enter\&#34; to continue...    \c&#34;</span><span style=""> 
+</span><span style=""></span><span style="">cnt</span><span style=""></span><span style="color:#f92672">=</span><span style="color:#ae81ff">5</span><span style="">
+</span><span style=""></span><span style="color:#66d9ef">while</span><span style=""> </span><span style="color:#f92672">((</span><span style=""> cnt &gt;</span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#ae81ff">0</span><span style=""> </span><span style="color:#f92672">))</span><span style=""> </span><span style="">;</span><span style=""> </span><span style="color:#66d9ef">do</span><span style="">
+</span><span style="">  </span><span style="color:#66d9ef">if</span><span style=""> </span><span style="color:#f92672">((</span><span style=""> cnt &lt; </span><span style="color:#ae81ff">9</span><span style=""> </span><span style="color:#f92672">))</span><span style=""> </span><span style="">;</span><span style=""> </span><span style="color:#66d9ef">then</span><span style="">
+</span><span style="">    </span><span style="">echo</span><span style=""> -e </span><span style="color:#e6db74">&#34;\b\b</span><span style="color:#e6db74">${</span><span style="">cnt</span><span style="color:#e6db74">}</span><span style="color:#e6db74">s\c&#34;</span><span style="">
+</span><span style="">  </span><span style="color:#66d9ef">elif</span><span style=""> </span><span style="color:#f92672">((</span><span style=""> </span><span style="">cnt</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">9</span><span style=""> </span><span style="color:#f92672">))</span><span style=""> </span><span style="">;</span><span style=""> </span><span style="color:#66d9ef">then</span><span style="">
+</span><span style="">    </span><span style="">echo</span><span style=""> -e </span><span style="color:#e6db74">&#34;\b\b\b </span><span style="color:#e6db74">${</span><span style="">cnt</span><span style="color:#e6db74">}</span><span style="color:#e6db74">s\c&#34;</span><span style="">
+</span><span style="">  </span><span style="color:#66d9ef">elif</span><span style=""> </span><span style="color:#f92672">((</span><span style=""> cnt &lt;</span><span style="color:#f92672">=</span><span style=""> </span><span style="color:#ae81ff">99</span><span style=""> </span><span style="color:#f92672">))</span><span style=""> </span><span style="">;</span><span style=""> </span><span style="color:#66d9ef">then</span><span style="">
+</span><span style="">    </span><span style="">echo</span><span style=""> -e </span><span style="color:#e6db74">&#34;\b\b\b\b </span><span style="color:#e6db74">${</span><span style="">cnt</span><span style="color:#e6db74">}</span><span style="color:#e6db74">s\c&#34;</span><span style="">
+</span><span style="">  </span><span style="color:#66d9ef">elif</span><span style=""> </span><span style="color:#f92672">((</span><span style=""> cnt &lt; </span><span style="color:#ae81ff">999</span><span style=""> </span><span style="color:#f92672">))</span><span style=""> </span><span style="">;</span><span style=""> </span><span style="color:#66d9ef">then</span><span style="">
+</span><span style="">    </span><span style="">echo</span><span style=""> -e </span><span style="color:#e6db74">&#34;\b\b\b\b</span><span style="color:#e6db74">${</span><span style="">cnt</span><span style="color:#e6db74">}</span><span style="color:#e6db74">s\c&#34;</span><span style="">
+</span><span style="">  </span><span style="color:#66d9ef">fi</span><span style="">
+</span><span style="">  </span><span style="">read</span><span style=""> -t </span><span style="color:#ae81ff">1</span><span style=""> my_reply
+</span><span style="">  </span><span style="color:#f92672">((</span><span style=""> </span><span style="">$?</span><span style=""> </span><span style="color:#f92672">==</span><span style=""> </span><span style="color:#ae81ff">0</span><span style=""> </span><span style="color:#f92672">))</span><span style=""> </span><span style="color:#f92672">&amp;&amp;</span><span style=""> </span><span style="">exit</span><span style=""> </span><span style="color:#ae81ff">1</span><span style="">
+</span><span style="">  </span><span style="">let</span><span style=""> cnt-</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="">
+</span><span style=""></span><span style="color:#66d9ef">done</span><span style="">
+</span><span style=""></span><span style="color:#f92672">}</span></code></pre>
+</div>
 <p>The user will see the following message on his terminal with the seconds counting down in place:</p>
 
 <pre><code>john@ubuntu:~$ Hit &quot;Ctrl+c&quot; to quit or &quot;Enter&quot; to continue... 5s
@@ -146,7 +144,7 @@ done
 		
 		
 		
-		<li><a href="https://victorbrca.github.io/index.xml" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
+		<li><a href="/index.xml" class="icon fa-rss" type="application/rss+xml"><span class="label">RSS</span></a></li>
 		
 	</ul>
 
@@ -160,12 +158,12 @@ done
 </footer>
 
 <!-- Scripts -->
-<script src="https://victorbrca.github.io/js/jquery.min.js"></script>
-<script src="https://victorbrca.github.io/js/jquery.poptrox.min.js"></script>
-<script src="https://victorbrca.github.io/js/skel.min.js"></script>
-<script src="https://victorbrca.github.io/js/util.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.poptrox.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
 
-<script src="https://victorbrca.github.io/js/main.js"></script>
+<script src="/js/main.js"></script>
 
 
 

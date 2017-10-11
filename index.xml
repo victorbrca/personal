@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Victor Mendonça</title>
-    <link>https://victorbrca.github.io/</link>
+    <link>/</link>
     <description>Recent content on Victor Mendonça</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Nov 2016 17:46:34 -0500</lastBuildDate>
     
-	<atom:link href="https://victorbrca.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Photography</title>
-      <link>https://victorbrca.github.io/photography/</link>
+      <link>/photography/</link>
       <pubDate>Wed, 09 Nov 2016 17:46:34 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/photography/</guid>
+      <guid>/photography/</guid>
       <description></description>
     </item>
     
     <item>
       <title>contact</title>
-      <link>https://victorbrca.github.io/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 07 Nov 2016 23:22:47 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/contact/</guid>
+      <guid>/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to Record and Share a Terminal Session</title>
-      <link>https://victorbrca.github.io/post/how-to-record-and-share-a-terminal-session/</link>
+      <link>/post/how-to-record-and-share-a-terminal-session/</link>
       <pubDate>Mon, 07 Nov 2016 23:14:36 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/post/how-to-record-and-share-a-terminal-session/</guid>
+      <guid>/post/how-to-record-and-share-a-terminal-session/</guid>
       <description>A while ago I had shared instructions on &amp;ldquo;How to Share a Terminal Window Online&amp;rdquo;. This is great for live support.
 Today I&amp;rsquo;m sharing instructions on how to record your terminal session, and not only share it, but also allow users to copy and paste text from the playback video.
 The installation could not be easier. And to show how great this utility is, I&amp;rsquo;m showing the instructions using a &amp;ldquo;video&amp;rdquo; recorded with &amp;ldquo;showterm&amp;rdquo;.</description>
@@ -42,10 +42,10 @@ The installation could not be easier. And to show how great this utility is, I&a
     
     <item>
       <title>Professional</title>
-      <link>https://victorbrca.github.io/professional/</link>
+      <link>/professional/</link>
       <pubDate>Mon, 07 Nov 2016 23:08:18 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/professional/</guid>
+      <guid>/professional/</guid>
       <description>Linux Application Infrastructure WMOS (Manhattan) Systems Integration Consultant 
 Victor is an independent IT contractor with strong Linux background living in Toronto.
 His company, GeekIT Consulting Inc., specializes in Linux, and for the past few years, in the design and deployment of Manhattan’s WMOS Open Systems (a supply chain solution designed by Manhattan Associates). Some of his clients are well known names in the Canadian industry (like Shoppers Drug Mart and Home Hardware).</description>
@@ -53,10 +53,10 @@ His company, GeekIT Consulting Inc., specializes in Linux, and for the past few 
     
     <item>
       <title>Dance</title>
-      <link>https://victorbrca.github.io/dance/</link>
+      <link>/dance/</link>
       <pubDate>Mon, 07 Nov 2016 23:01:41 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/dance/</guid>
+      <guid>/dance/</guid>
       <description>Victor started dancing in 2010 as part of a performance group for Brazil Dance World (a Toronto based brazilian dance school). During 2 years he did perfomances for various brazilian rhythms (like Samba de Gafieira, Forró, Zouk, Soltinho and Bolero), as well as event organization and classes monitoring. Early 2012 Victor parted ways with Brazil Dance World and stopped with all brazilian dancing.
 
  From early 2012 to late 2014 Victor did Argentine Tango at Rhythm and Motion, completing all 8 levels at the school.</description>
@@ -64,21 +64,21 @@ His company, GeekIT Consulting Inc., specializes in Linux, and for the past few 
     
     <item>
       <title>How to Create A Prompt With Timeout in Bash</title>
-      <link>https://victorbrca.github.io/post/how-to-create-a-prompt-with-timeout-in-bash/</link>
+      <link>/post/how-to-create-a-prompt-with-timeout-in-bash/</link>
       <pubDate>Wed, 19 Oct 2016 23:26:12 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/post/how-to-create-a-prompt-with-timeout-in-bash/</guid>
+      <guid>/post/how-to-create-a-prompt-with-timeout-in-bash/</guid>
       <description>Here&amp;rsquo;s a quick function that will display a prompt with timeout in a bash script:
-_myCountdownFunction () { echo -e &#34;Hit \&#34;Ctrl+c\&#34; to quit or \&#34;Enter\&#34; to continue... \c&#34; cnt=5 while (( cnt = 0 )) ; do if (( cnt The user will see the following message on his terminal with the seconds counting down in place:
+_myCountdownFunction (){echo-e &amp;#34;Hit \&amp;#34;Ctrl+c\&amp;#34; to quit or \&amp;#34;Enter\&amp;#34; to continue... \c&amp;#34;cnt=5while((cnt &amp;gt;=0));doif((cnt &amp;lt; 9));thenecho-e &amp;#34;\b\b${cnt}s\c&amp;#34;elif((cnt==9));thenecho-e &amp;#34;\b\b\b ${cnt}s\c&amp;#34;elif((cnt &amp;lt;=99));thenecho-e &amp;#34;\b\b\b\b ${cnt}s\c&amp;#34;elif((cnt &amp;lt; 999));thenecho-e &amp;#34;\b\b\b\b${cnt}s\c&amp;#34;firead-t 1my_reply (($?==0))&amp;amp;&amp;amp;exit1letcnt-=1done}  The user will see the following message on his terminal with the seconds counting down in place:
 john@ubuntu:~$ Hit &amp;quot;Ctrl+c&amp;quot; to quit or &amp;quot;Enter&amp;quot; to continue... 5s  At the end of the specified time in &amp;lsquo;cnt&amp;rsquo;, the script (where the function would be) will continue executing, and if the user hits &amp;ldquo;Ctrl+c&amp;rdquo; before that, it will exit (both script and function).</description>
     </item>
     
     <item>
       <title>How to Create a Quick Web Server</title>
-      <link>https://victorbrca.github.io/post/how-to-create-a-quick-web-server/</link>
+      <link>/post/how-to-create-a-quick-web-server/</link>
       <pubDate>Fri, 02 Sep 2016 00:01:59 -0500</pubDate>
       
-      <guid>https://victorbrca.github.io/post/how-to-create-a-quick-web-server/</guid>
+      <guid>/post/how-to-create-a-quick-web-server/</guid>
       <description>Have you ever had the need to create a web server to perform a test? Well, here are a few quick options on how to do this.
 Got Netcat? If you have Netcat on the server (which is pretty easy to get), then you can do this.
 Example 1: Display the date and the text &amp;ldquo;It works&amp;rdquo;
